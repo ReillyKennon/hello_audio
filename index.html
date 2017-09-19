@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello Audio</title>
+</head>
+
+<body>
+
+  <button onclick="playSound()" type="button">Play Sound</button>
+  <button onclick="pauseSound()" type="button">Pause Sound</button><br>
+
+  <video id="sound">
+    <source src="./sounds/Bathe.mp3" type="audio/mp3">
+  </video>
+
+  <script>
+    const sound = document.getElementById("sound");
+    function playSound() {
+      sound.play();
+    }
+    function pauseSound() {
+      sound.pause();
+    }
+  </script>
+
+</body>
+
+</html>
